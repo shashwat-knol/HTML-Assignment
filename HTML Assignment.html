@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Assignemnt</title>
+  </head>
+  <style type="text/css">
+    nav a
+    {
+      display: inline-block;
+      padding-right: 10px;
+      padding-top: 10px;
+    }
+    
+    table, th, td
+    {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    
+    .header
+    {
+      max-width: 1200px;
+    }
+    
+    .tagname
+    {
+      font-size:20px;
+      padding:10px;
+      margin-bottom:10px;
+    }
+    
+    .h1tag
+    {
+      font-size:20px;
+      padding:10px;
+      margin-bottom:10px;
+    }
+    
+    .ptag
+    {
+      font-size:20px;
+      padding:10px;'
+      margin-bottom:10px;
+    }
+    
+    #header-logo
+    {
+      width: 250px;
+      height: 35px;
+      margin-top: 10px;
+      margin-right: 30px;
+      display: inline-block;
+    }
+    
+    #header-text
+    {
+      display: inline-block;
+    }
+    
+    #sample-image
+    {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
+  <body>
+
+    <!-- Header -->
+    <div class="header">
+      <img id="header-logo" alt="w3schools logo" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/W3Schools_logo.png" >
+      <p id="header-text">THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
+    </div>
+    <!-- Section ends -->
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <nav>
+        <a href="https://www.w3schools.com/html/">HTML</a>
+        <a href="https://www.w3schools.com/w3css/defaulT.asp">CSS</a>
+        <a href="https://www.w3schools.com/js/DEFAULT.asp">JAVASCRIPT</a>
+        <a href="https://www.w3schools.com/python/">PYTHON</a>
+      </nav>
+    </div>
+    <!-- Section ends -->
+
+    <!-- HTML -->
+    <div>
+      <h1 id="HTMLIntro">HTML Introduction</h1>
+      <p>HTML is the standard markup language for creating Web pages.</p>
+      <ol>
+        <li><a href="#WhatIsHtml">What is HTML</a></li>
+        <li><a href="#HtmlElement">What is HTML element</a></li>
+        <li><a href="#WebBrowsers">Web Browsers</a></li>
+      </ol>
+    </div>
+    <div>
+      <h2 id="WhatIsHtml">What is HTML?</h2>
+      <ul>
+        <li>HTML stands for Hyper Text Markup Language</li>
+        <li>HTML is the standard markup language for creating Web pages</li>
+        <li>HTML describes the structure of a Web page</li>
+        <li>HTML consists of a series of elements</li>
+        <li>HTML elements tell the browser how to display the content</li>
+        <li>HTML elements label pieces of content such as "this is a heading", "this 
+        is a paragraph", "this is a link", etc.</li>
+      </ul>
+    </div>
+    <div>
+      <h2 id="HtmlElement">What is an HTML Element?</h2>
+      <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+      <div class="tagname">
+        <span style="color:brown"><span style="color:mediumblue">&lt;</span>tagname<span style="color:mediumblue">&gt;</span></span>Content goes here...<span style="color:brown"><span style="color:mediumblue">&lt;</span>/tagname<span style="color:mediumblue">&gt;</span></span>
+      </div>
+      <p>The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+      <div class="h1tag">
+        <span style="color:brown"><span style="color:mediumblue">&lt;<span style="color:brown">h1</span>&gt;</span></span>My 
+        First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span>
+      </div>
+      <div class="ptag">
+        <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+      </div>
+      <table class="elements-table">
+        <tbody>
+          <tr>
+            <th>Start tag</th>
+            <th>Element content</th>
+            <th>End tag</th>
+          </tr>
+          <tr>
+            <td>&lt;h1&gt;</td>
+            <td>My First Heading</td>
+            <td>&lt;/h1&gt;</td>
+          </tr>
+          <tr>
+            <td>&lt;p&gt;</td>
+            <td>My first paragraph.</td>
+            <td>&lt;/p&gt;</td>
+          </tr>
+          <tr>
+            <td>&lt;br&gt;</td>
+            <td><em>none</em></td>
+            <td><em>none</em></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Section ends -->
+
+    <!-- Web browsers -->
+    <div>
+      <h2 id="WebBrowsers">Web Browsers</h2>
+      <p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them 
+      correctly.</p>
+      <p>A browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+      <p><img id="sample-image" alt="View in Browser" src="https://www.w3schools.com/html/img_chrome.png"></p>
+    </div>
+    <!-- Section ends -->
+
+    <!-- Review Form -->
+    <div>
+      <h2>Submit a review</h2>
+      <form action="https://www.google.com/" method="get">
+        Name:
+        <input type="text" name="name">
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other
+        <br/><br/>
+        Rate it:
+        <select name="rating">
+          <option>Very good</option>
+          <option>Good</option>
+          <option>Average</option>
+          <option>Bad</option>
+          <option>Very bad</option>
+        </select>
+        <br/>
+        <textarea name="review" rows="10" cols="30">Please add a review.</textarea>
+        <br/>
+        <button type="Submit">Submit</button>
+      </form>
+    </div>
+    <!-- Section ends -->
+
+  </body>
+</html>
